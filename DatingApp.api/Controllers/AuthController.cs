@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using DatingApp.api.Data;
 using DatingApp.api.Dtos;
 using DatingApp.api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace DatingApp.api.Controllers
 {
+   
    [Route("api/[controller]")]
     public class AuthController:ControllerBase
     {
